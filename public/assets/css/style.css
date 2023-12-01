@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primaryColor: #00452C;
+    --secondaryColor: #FE7119;
+    --blackColor: #3a3a3a;
+  }
+
+#masyarakat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    padding: 32px 0;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    font-size: 16px;
+    color: var(--primaryColor) !important;
+    font-weight: 600;
+}
+
+.nav-link.active {
+    color: var(--primaryColor)!important;
+    font-weight: 700;
+    position: relative;
+}
+
+.nav-link.active::before {
+    content: "";
+    width: 85%;
+    height: 0.5px;
+    background-color: var(--secondaryColor);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 1px;
+    left: 8px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    width: 0%;
+    height: 0.5px;
+    background-color: var(--secondaryColor);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 1px;
+    left: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    content: "";
+    width: 85%;
+    height: 0.5px;
+    background-color: var(--secondaryColor);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 1px;
+    left: 8px;
+}
+
+.carousel-caption {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primaryColor);
+    padding: 15px;
+    text-align: center;
+}
+
+.carousel-caption h3{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.carousel-caption p{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#promo .row{
+    gap: 141px;
+}
+
+#promo .col{
+    display: flex;
+    justify-content: center;
+}
+
+#promo .img{
+    width: 100%;
+    height: 233px;
+}
+
+#promo .card{
+    width: 306px;
+    height: 433px;
+}
+
+#promo .card-title{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#promo .card-price{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#promo .card-text{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.discount-badge {
+    position: absolute;
+    background-color: var(--secondaryColor);
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border-radius: 0 20px 20px 0;
+    z-index: 10;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+#filter .col{
+    display: flex;
+    justify-content: center;
+}
+
+#filter .row{
+    gap: 135px;
+}
+
+#filter .card{
+    width: 312px;
+    height: 407px;
+}
+
+#filter img{
+    width: 100%;
+    height: 312px;
+}
+
+#filter .card-title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#filter .card-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#filter .card-price{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.footer-link:hover{
+    color: var(--secondaryColor) !important;
+}
+
+.bergabung-btn{
+    transition: transform 330ms ease-in-out;
+}
+
+.bergabung-btn:hover{
+    border: 1px solid var(--secondaryColor) !important;
+    color: var(--secondaryColor) !important;
+    transform: scale(1.1);
+    transition: transform 330ms ease-in-out;
+}
+
+#distribusi-table table{
+    width: 100%;
+	border-collapse: collapse;
+	margin:50px auto;
+}
+
+
+#distribusi-table th {
+	background: var(--secondaryColor);
+	color: white;
+	font-weight: bold;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+#distribusi-table td{
+    padding: 20px;
+    text-align: center;
+    background: rgba(254, 113, 25, 0.20);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#faq .active{
+    border-radius: 28.5px !important;
+    border: 1px solid var(--primaryColor) !important;
+    color: var(--primaryColor) !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.pagination.pagination-sm li.page-item a.page-link {
+    border: none;
+    color: #C0C0C0;
+    font-size: 16px;
+}
+
+#pagination .active{
+    background-color: transparent !important;
+    color: var(--primaryColor) !important;
+}
+
+.chat-bot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    color: #fff;
+    font-size: 30px;
+    border: 0.5px solid var(--secondaryColor);
+}
+
+.chat-bot-button:hover{
+    color: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
+}
+
+.kanan h2{
+    border-radius: 10px;
+    background: #00452C;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+}
+
+#rekomendasi .card{
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.10));
+}
+
+#rekomendasi .card-title{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#rekomendasi .card-text{
+    color: #616161;
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+#postingan-terbaru .card{
+    border-radius: 35px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#postingan-terbaru .card-title{
+    color: #00452C;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+}
+
+#postingan-terbaru .card-text{
+    color: #FE7119;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+
+#postingan-terbaru .card-date{
+    color: #9C9C9C;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+
+#postingan-terbaru .btn{
+    border-radius: 20px;
+    background: #00452C;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+
+#postingan-serupa .card{
+    height: 357px;
+}
+
+#postingan-serupa .card-title{
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#postingan-serupa .card-text{
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 576px) {
+    #postingan-serupa .card{
+        height: 400px;
+    }
+    .image-text{
+        display: none;
+    }
+
+    #promo .row{
+        gap: 20px;
+    }
+    #filter .row{
+        gap: 20px;
+    }
+
+    .nav-link:hover::before {
+        width: 20%;
+        position: absolute;
+        left: 0;
+    }
+
+    .nav-link.active::before {
+        width: 20%;
+        left: 0;
+    }
+
+    .carousel-caption h3 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 26px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    #postingan-serupa .card{
+        height: 500px;
+    }
+    .image-text{
+        font-size: 16px !important;
+    }
+
+    #promo .row{
+        gap: 20px;
+    }
+    #filter .row{
+        gap: 20px;
+    }
+
+    .nav-link:hover::before {
+        width: 20%;
+        position: absolute;
+        left: 0;
+    }
+
+    .nav-link.active::before {
+        width: 20%;
+        left: 0;
+    }
+
+    .carousel-caption h3 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 26px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+.leaflet-popup .leaflet-popup-close-button {
+    display: none;
+}
+
+.leaflet-popup-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+}
+
+.custom-popup {
+    border-radius: 25px;
+    background-color: #fff;
+}

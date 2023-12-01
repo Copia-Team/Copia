@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primaryColor: #00452C;
+    --secondaryColor: #FE7119;
+    --blackColor: #3a3a3a;
+}
+
+#petani {
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-container .card{
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.70);
+    width: 572px;
+}
+.image-container .card-body{
+    padding: 50px;
+}
+
+#register-link{
+    transition: transform 330ms ease-in-out;
+}
+
+#register-link:hover{
+    text-decoration: underline !important;
+    color: var(--primaryColor);
+    transform: scale(1.1);
+    transition: transform 330ms ease-in-out;
+}
+
+#password-eye{
+    padding: 13px;
+    right: 55px;
+}
+
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-bg: #6EBF4B;
+    --bs-popover-body-color: #fff;
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .image-container .card{
+        width: auto;
+    }
+    .image-container .card-body{
+        padding: 20px;
+    }
+
+    #password-eye{
+        padding: 13px;
+        right: 25px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .image-container .card{
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+}
